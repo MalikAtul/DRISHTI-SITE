@@ -1,15 +1,17 @@
-/* Square cursor styles - desktop only */
 @media (min-width: 1024px) {
-  * { cursor: none !important; }
+  *, *::before, *::after {
+    cursor: none !important;
+  }
 }
 
 .csq {
   position: fixed;
   pointer-events: none;
   z-index: 99999;
-  border-radius: 0; /* SQUARE, not circle */
-  background: var(--orange);
-  transition: background-color 0.3s ease;
+  border-radius: 0;
+  background: #FF6B35;
+  transition: background-color 0.3s ease, transform 0.25s ease, border 0.2s ease;
+  will-change: transform;
 }
 
 .csq.on-light {
@@ -17,6 +19,6 @@
 }
 
 .csq.hovering {
-  background: rgba(255,107,53,0.15);
-  border: 1px solid var(--orange);
+  background: rgba(255, 107, 53, 0.15) !important;
+  border: 1px solid #FF6B35;
 }

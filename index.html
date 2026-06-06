@@ -27,7 +27,7 @@
         <div class="loader-progress-bar"></div>
       </div>
       <div class="loader-status">Initializing neural pathways&hellip;</div>
-      <div class="loader-scanline"></div>
+      <div class="loader-scanline" aria-hidden="true"></div>
     </div>
   </div>
 
@@ -39,7 +39,7 @@
   <!-- ============================================ -->
   <!-- 3. CIRCLE WIPE                               -->
   <!-- ============================================ -->
-  <div id="circle-wipe"></div>
+  <div id="circle-wipe" aria-hidden="true"></div>
 
   <!-- ============================================ -->
   <!-- 4. NAVIGATION                                -->
@@ -87,14 +87,16 @@
     </div>
   </nav>
 
+  <main>
   <!-- ============================================ -->
   <!-- 5. HERO                                      -->
   <!-- ============================================ -->
   <section id="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-scanline"></div>
-    <div class="hero-vignette"></div>
-    <canvas id="hero-canvas"></canvas>
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-scanline" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <div class="hero-grain" aria-hidden="true"></div>
+    <canvas id="hero-canvas" role="img" aria-label="3D product visualization"></canvas>
 
     <div id="hero-content">
       <div class="hero-badge reveal" data-delay="0">
@@ -361,7 +363,7 @@
 
         <!-- Right: 3D Canvas -->
         <div class="gloves-right">
-          <canvas id="glove-canvas"></canvas>
+          <canvas id="glove-canvas" role="img" aria-label="3D smart glove model"></canvas>
           <div class="ar-label ar-label-flex" data-component="flex">Flex Sensor</div>
           <div class="ar-label ar-label-mpu" data-component="mpu">MPU6050</div>
           <div class="ar-label ar-label-adc" data-component="adc">ADS1115</div>
@@ -511,7 +513,7 @@
       <div class="kai-content">
         <!-- Left: 3D Canvas -->
         <div class="kai-left">
-          <canvas id="locket-canvas"></canvas>
+          <canvas id="locket-canvas" role="img" aria-label="3D KAI locket model"></canvas>
           <div class="ar-label ar-label-camera" data-component="camera">Pi Camera</div>
           <div class="ar-label ar-label-pi" data-component="pi">Pi Zero 2WH</div>
           <div class="ar-label ar-label-mic" data-component="mic">INMP441 Mic</div>
@@ -911,7 +913,7 @@
           data-hi="यह सब कैसे जुड़ता है">How It All Connects</h2>
 
       <div class="mindmap-wrapper reveal reveal-scale" data-delay="200">
-        <canvas id="mindmap-canvas"></canvas>
+        <canvas id="mindmap-canvas" role="img" aria-label="3D architecture mindmap"></canvas>
       </div>
 
       <div class="mindmap-popup" id="mindmap-popup">
@@ -1314,6 +1316,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- ============================================ -->
   <!-- 20. FOOTER                                   -->
