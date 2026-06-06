@@ -1,0 +1,22 @@
+/* Square cursor styles - desktop only */
+@media (min-width: 1024px) {
+  * { cursor: none !important; }
+}
+
+.csq {
+  position: fixed;
+  pointer-events: none;
+  z-index: 99999;
+  border-radius: 0; /* SQUARE, not circle */
+  background: var(--orange);
+  transition: background-color 0.3s ease;
+}
+
+.csq.on-light {
+  background: #0D1117;
+}
+
+.csq.hovering {
+  background: rgba(255,107,53,0.15);
+  border: 1px solid var(--orange);
+}
