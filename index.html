@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRISHTI — Dual Assistive AI System</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cursor.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- 1. LOADING SCREEN                            -->
+  <!-- ============================================ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-label">MANAK INSPIRE 2026</div>
+      <div class="loader-title">
+        <span>D</span><span>R</span><span>I</span><span>S</span><span>H</span><span>T</span><span>I</span>
+      </div>
+      <div class="loader-subtitle">DUAL ASSISTIVE AI SYSTEM &middot; GOHANA, INDIA</div>
+      <div class="loader-progress">
+        <div class="loader-progress-bar"></div>
+      </div>
+      <div class="loader-status">Initializing neural pathways&hellip;</div>
+      <div class="loader-scanline"></div>
+    </div>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- 2. SCROLL PROGRESS BAR                       -->
+  <!-- ============================================ -->
+  <div id="scroll-progress"></div>
+
+  <!-- ============================================ -->
+  <!-- 3. CIRCLE WIPE                               -->
+  <!-- ============================================ -->
+  <div id="circle-wipe"></div>
+
+  <!-- ============================================ -->
+  <!-- 4. NAVIGATION                                -->
+  <!-- ============================================ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <!-- LEFT: Logo -->
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-text">DRISHTI</span>
+        <span class="nav-logo-sub">MANAK INSPIRE 2026</span>
+      </a>
+
+      <!-- CENTER: Desktop links -->
+      <div class="nav-links">
+        <a href="#hero" class="nav-link active">HOME</a>
+        <a href="#problem" class="nav-link">PROBLEM</a>
+        <a href="#gloves" class="nav-link">GLOVES</a>
+        <a href="#kai" class="nav-link">KAI</a>
+        <a href="#architecture" class="nav-link">ARCHITECTURE</a>
+        <a href="#timeline" class="nav-link">TIMELINE</a>
+        <a href="#creator" class="nav-link">CREATOR</a>
+      </div>
+
+      <!-- RIGHT: Controls -->
+      <div class="nav-right">
+        <button id="lang-toggle" class="nav-btn lang-btn" aria-label="Toggle Hindi">हि / EN</button>
+        <a href="#hero" class="nav-btn exhibition-btn">EXHIBITION</a>
+        <div id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile overlay -->
+    <div id="mobile-menu">
+      <a href="#hero" class="mobile-link">HOME</a>
+      <a href="#problem" class="mobile-link">PROBLEM</a>
+      <a href="#gloves" class="mobile-link">GLOVES</a>
+      <a href="#kai" class="mobile-link">KAI</a>
+      <a href="#architecture" class="mobile-link">ARCHITECTURE</a>
+      <a href="#timeline" class="mobile-link">TIMELINE</a>
+      <a href="#creator" class="mobile-link">CREATOR</a>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- 5. HERO                                      -->
+  <!-- ============================================ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-scanline"></div>
+    <div class="hero-vignette"></div>
+    <canvas id="hero-canvas"></canvas>
+
+    <div id="hero-content">
+      <div class="hero-badge reveal" data-delay="0">
+        <span class="pulse-dot"></span>
+        <span>GOVERNMENT OF INDIA FUNDED &middot; 2026</span>
+      </div>
+
+      <h1 class="mag-text hero-title reveal" data-delay="100"
+          data-en="DRISHTI"
+          data-hi="दृष्टि">DRISHTI</h1>
+
+      <p class="hero-subtitle reveal" data-delay="200"
+         data-en="DUAL ASSISTIVE AI &middot; GOHANA, INDIA"
+         data-hi="दोहरी सहायक AI &middot; गोहाना, भारत">DUAL ASSISTIVE AI &middot; GOHANA, INDIA</p>
+
+      <p class="hero-tagline reveal" data-delay="300"
+         data-en="Seeing for the Blind. Speaking for the Silent."
+         data-hi="अंधों के लिए आँखें। मूकों के लिए आवाज़।">Seeing for the Blind. Speaking for the Silent.</p>
+
+      <div class="hero-chips reveal" data-delay="400">
+        <span class="chip chip-orange">&#x1F9E4; Smart Gloves</span>
+        <span class="chip chip-teal">&#x1F4FF; KAI Locket</span>
+      </div>
+
+      <div class="hero-cta reveal" data-delay="500">
+        <a href="#problem" class="btn btn-primary mag-text">EXPLORE DRISHTI &darr;</a>
+        <a href="#creator" class="btn btn-secondary mag-text">MEET ATUL MALIK</a>
+      </div>
+
+      <p class="hero-creator-note reveal" data-delay="600"
+         data-en="Built by Atul Malik, 16 &middot; Class XII, Gohana, Haryana"
+         data-hi="अतुल मलिक द्वारा निर्मित, 16 &middot; कक्षा XII, गोहाना, हरियाणा">Built by Atul Malik, 16 &middot; Class XII, Gohana, Haryana</p>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 6. PROBLEM SECTION                           -->
+  <!-- ============================================ -->
+  <section id="problem" class="bg-light">
+    <div class="container">
+      <h2 class="mag-text section-heading reveal"
+          data-en="Why DRISHTI Exists"
+          data-hi="दृष्टि क्यों बनाई गई">Why DRISHTI Exists</h2>
+
+      <p class="section-intro reveal" data-delay="100"
+         data-en="In India, millions live without the ability to express themselves or navigate safely. DRISHTI was born from witnessing this silence and darkness firsthand in Gohana."
+         data-hi="भारत में, लाखों लोग खुद को व्यक्त करने या सुरक्षित रूप से चलने-फिरने की क्षमता के बिना जीते हैं। दृष्टि का जन्म गोहाना में इस चुप्पी और अंधकार को प्रत्यक्ष देखकर हुआ।">In India, millions live without the ability to express themselves or navigate safely. DRISHTI was born from witnessing this silence and darkness firsthand in Gohana.</p>
+
+      <div class="problem-grid">
+        <!-- Card 1: Deaf/Mute -->
+        <div class="problem-card problem-card-orange reveal reveal-left" data-delay="200">
+          <div class="problem-icon">
+            <i class="ti ti-ear-off"></i>
+          </div>
+          <div class="problem-stat">70M+</div>
+          <h3 class="problem-title"
+              data-en="The Silence of Expression"
+              data-hi="अभिव्यक्ति की चुप्पी">The Silence of Expression</h3>
+          <p class="problem-desc"
+             data-en="Over 70 million deaf and mute Indians struggle daily to communicate. Indian Sign Language (ISL) remains unrecognized by most — leaving an entire community voiceless in their own country."
+             data-hi="70 मिलियन से अधिक बधिर और मूक भारतीय रोज़ाना संवाद करने में संघर्ष करते हैं। भारतीय सांकेतिक भाषा (ISL) अधिकांश द्वारा अपरिचित है।">Over 70 million deaf and mute Indians struggle daily to communicate. Indian Sign Language (ISL) remains unrecognized by most — leaving an entire community voiceless in their own country.</p>
+          <div class="awareness-bar">
+            <div class="awareness-label">ISL Awareness in India</div>
+            <div class="awareness-track">
+              <div class="awareness-fill" data-value="3" style="--fill-color: var(--orange);">
+                <span>~3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Blind -->
+        <div class="problem-card problem-card-teal reveal reveal-right" data-delay="300">
+          <div class="problem-icon">
+            <i class="ti ti-eye-off"></i>
+          </div>
+          <div class="problem-stat">15M+</div>
+          <h3 class="problem-title"
+              data-en="The Darkness of Navigation"
+              data-hi="नेविगेशन का अंधकार">The Darkness of Navigation</h3>
+          <p class="problem-desc"
+             data-en="15 million blind Indians navigate a world not designed for them. Existing assistive tools cost ₹50,000+ and are inaccessible to most families. DRISHTI changes that at 1/6th the cost."
+             data-hi="15 मिलियन नेत्रहीन भारतीय एक ऐसी दुनिया में चलते हैं जो उनके लिए नहीं बनी। मौजूदा सहायक उपकरणों की कीमत ₹50,000+ है।">15 million blind Indians navigate a world not designed for them. Existing assistive tools cost &#x20B9;50,000+ and are inaccessible to most families. DRISHTI changes that at 1/6th the cost.</p>
+          <div class="price-compare">
+            <div class="price-item price-existing">
+              <span class="price-label">Existing Solutions</span>
+              <span class="price-value">&#x20B9;50,000+</span>
+            </div>
+            <div class="price-item price-drishti">
+              <span class="price-label">DRISHTI</span>
+              <span class="price-value">&#x20B9;8,000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-statement reveal reveal-scale" data-delay="400">
+        <span class="statement-line"
+              data-en="One project."
+              data-hi="एक परियोजना।">One project.</span>
+        <span class="statement-line"
+              data-en="Two systems."
+              data-hi="दो प्रणालियाँ।">Two systems.</span>
+        <span class="statement-line"
+              data-en="Zero barriers."
+              data-hi="शून्य बाधाएँ।">Zero barriers.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 7. STATS STRIP                               -->
+  <!-- ============================================ -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="stat-item reveal" data-delay="0">
+        <span class="stat-number" data-target="70">70M+</span>
+        <span class="stat-label"
+              data-en="INDIANS SERVED"
+              data-hi="भारतीयों की सेवा">INDIANS SERVED</span>
+      </div>
+      <div class="stat-item reveal" data-delay="100">
+        <span class="stat-number">&#x20B9;8,000</span>
+        <span class="stat-label"
+              data-en="HARDWARE COST"
+              data-hi="हार्डवेयर लागत">HARDWARE COST</span>
+      </div>
+      <div class="stat-item reveal" data-delay="200">
+        <span class="stat-number" data-target="40">40+</span>
+        <span class="stat-label"
+              data-en="ISL SIGNS"
+              data-hi="ISL संकेत">ISL SIGNS</span>
+      </div>
+      <div class="stat-item reveal" data-delay="300">
+        <span class="stat-number">&lt;400ms</span>
+        <span class="stat-label"
+              data-en="LATENCY"
+              data-hi="विलंबता">LATENCY</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 8. SMART GLOVES                              -->
+  <!-- ============================================ -->
+  <section id="gloves">
+    <div class="gloves-sticky">
+      <div class="gloves-content">
+        <!-- Left: Content phases -->
+        <div class="gloves-left">
+          <div class="content-phases">
+            <!-- Phase 1: Overview -->
+            <div class="phase phase-1 active">
+              <span class="phase-label reveal"
+                    data-en="SMART GLOVES"
+                    data-hi="स्मार्ट ग्लव्स">SMART GLOVES</span>
+              <h2 class="mag-text phase-title reveal" data-delay="100"
+                  data-en="Translating Sign Language into Speech"
+                  data-hi="सांकेतिक भाषा को वाणी में अनुवाद">Translating Sign Language into Speech</h2>
+              <p class="phase-desc reveal" data-delay="200"
+                 data-en="DRISHTI Smart Gloves capture Indian Sign Language gestures using flex sensors, accelerometers, and gyroscopes — then convert them to spoken Hindi in real-time using on-device machine learning."
+                 data-hi="दृष्टि स्मार्ट ग्लव्स फ्लेक्स सेंसर, एक्सेलेरोमीटर और जाइरोस्कोप का उपयोग करके ISL इशारों को कैप्चर करते हैं और उन्हें रीयल-टाइम में बोली जाने वाली हिंदी में बदलते हैं।">DRISHTI Smart Gloves capture Indian Sign Language gestures using flex sensors, accelerometers, and gyroscopes — then convert them to spoken Hindi in real-time using on-device machine learning.</p>
+              <div class="tech-chips reveal" data-delay="300">
+                <span class="tech-chip">ESP32</span>
+                <span class="tech-chip">Flex Sensors</span>
+                <span class="tech-chip">MPU6050</span>
+                <span class="tech-chip">ADS1115</span>
+                <span class="tech-chip">scikit-learn</span>
+                <span class="tech-chip">pyttsx3</span>
+              </div>
+            </div>
+
+            <!-- Phase 2: Explosion -->
+            <div class="phase phase-2">
+              <span class="phase-label">COMPONENT BREAKDOWN</span>
+              <h2 class="mag-text phase-title"
+                  data-en="Inside the Glove"
+                  data-hi="ग्लव के अंदर">Inside the Glove</h2>
+              <ul class="component-checklist">
+                <li class="component-item" data-component="flex">
+                  <i class="ti ti-check"></i>
+                  <span>5&times; Flex Sensors — finger bend detection</span>
+                </li>
+                <li class="component-item" data-component="mpu">
+                  <i class="ti ti-check"></i>
+                  <span>MPU6050 — 6-axis motion tracking</span>
+                </li>
+                <li class="component-item" data-component="adc">
+                  <i class="ti ti-check"></i>
+                  <span>ADS1115 — 16-bit ADC for precision</span>
+                </li>
+                <li class="component-item" data-component="esp">
+                  <i class="ti ti-check"></i>
+                  <span>ESP32 — dual-core WiFi microcontroller</span>
+                </li>
+                <li class="component-item" data-component="battery">
+                  <i class="ti ti-check"></i>
+                  <span>3.7V LiPo — 8-hour battery life</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Phase 3: Signal Journey -->
+            <div class="phase phase-3">
+              <span class="phase-label">SIGNAL PIPELINE</span>
+              <h2 class="mag-text phase-title"
+                  data-en="The Data Flow"
+                  data-hi="डेटा प्रवाह">The Data Flow</h2>
+              <div class="pipeline-nodes">
+                <div class="pipeline-node">
+                  <div class="pipeline-dot"></div>
+                  <span>Flex sensors detect finger positions</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot"></div>
+                  <span>ADS1115 digitizes analog signals</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot"></div>
+                  <span>ESP32 packages &amp; transmits via WiFi</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot"></div>
+                  <span>ML model classifies ISL gesture</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot"></div>
+                  <span>pyttsx3 speaks the recognized word</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 4: Reassembly -->
+            <div class="phase phase-4">
+              <span class="phase-label">COMPLETE SYSTEM</span>
+              <h2 class="mag-text phase-title"
+                  data-en="Ready to Speak"
+                  data-hi="बोलने को तैयार">Ready to Speak</h2>
+              <p class="phase-desc"
+                 data-en="With all components assembled, DRISHTI Smart Gloves achieve sub-400ms latency from gesture to speech — fast enough for natural conversation flow."
+                 data-hi="सभी घटकों के असेंबल होने पर, दृष्टि स्मार्ट ग्लव्स इशारे से भाषण तक 400ms से कम विलंबता प्राप्त करते हैं।">With all components assembled, DRISHTI Smart Gloves achieve sub-400ms latency from gesture to speech — fast enough for natural conversation flow.</p>
+              <div class="reassembly-stats">
+                <div class="reassembly-stat">
+                  <span class="reassembly-number">40+</span>
+                  <span class="reassembly-label">Signs Recognized</span>
+                </div>
+                <div class="reassembly-stat">
+                  <span class="reassembly-number">92%</span>
+                  <span class="reassembly-label">Accuracy</span>
+                </div>
+                <div class="reassembly-stat">
+                  <span class="reassembly-number">&lt;400ms</span>
+                  <span class="reassembly-label">Response Time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 3D Canvas -->
+        <div class="gloves-right">
+          <canvas id="glove-canvas"></canvas>
+          <div class="ar-label ar-label-flex" data-component="flex">Flex Sensor</div>
+          <div class="ar-label ar-label-mpu" data-component="mpu">MPU6050</div>
+          <div class="ar-label ar-label-adc" data-component="adc">ADS1115</div>
+          <div class="ar-label ar-label-esp" data-component="esp">ESP32</div>
+          <div class="ar-label ar-label-battery" data-component="battery">LiPo Battery</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 9. SIGNAL JOURNEY                            -->
+  <!-- ============================================ -->
+  <section id="signal-journey">
+    <div class="container">
+      <span class="section-label reveal"
+            data-en="SIGNAL JOURNEY"
+            data-hi="सिग्नल यात्रा">SIGNAL JOURNEY</span>
+      <h2 class="mag-text section-heading reveal" data-delay="100"
+          data-en="From Finger to Voice"
+          data-hi="उँगली से आवाज़ तक">From Finger to Voice</h2>
+
+      <div class="signal-row reveal" data-delay="200">
+        <div class="signal-node" data-step="1">
+          <div class="signal-icon"><i class="ti ti-hand-finger"></i></div>
+          <span class="signal-label">FLEX SENSOR</span>
+        </div>
+        <div class="signal-connector"><div class="signal-pulse"></div></div>
+
+        <div class="signal-node" data-step="2">
+          <div class="signal-icon"><i class="ti ti-cpu"></i></div>
+          <span class="signal-label">ADS1115</span>
+        </div>
+        <div class="signal-connector"><div class="signal-pulse"></div></div>
+
+        <div class="signal-node" data-step="3">
+          <div class="signal-icon"><i class="ti ti-microchip"></i></div>
+          <span class="signal-label">ESP32</span>
+        </div>
+        <div class="signal-connector"><div class="signal-pulse"></div></div>
+
+        <div class="signal-node" data-step="4">
+          <div class="signal-icon"><i class="ti ti-wifi"></i></div>
+          <span class="signal-label">WiFi</span>
+        </div>
+        <div class="signal-connector"><div class="signal-pulse"></div></div>
+
+        <div class="signal-node" data-step="5">
+          <div class="signal-icon"><i class="ti ti-brain"></i></div>
+          <span class="signal-label">LAPTOP ML</span>
+        </div>
+        <div class="signal-connector"><div class="signal-pulse"></div></div>
+
+        <div class="signal-node" data-step="6">
+          <div class="signal-icon"><i class="ti ti-volume"></i></div>
+          <span class="signal-label">pyttsx3</span>
+        </div>
+        <div class="signal-connector"><div class="signal-pulse"></div></div>
+
+        <div class="signal-node" data-step="7">
+          <div class="signal-icon"><i class="ti ti-speaker"></i></div>
+          <span class="signal-label">SPEAKER</span>
+        </div>
+      </div>
+
+      <div class="signal-latency reveal" data-delay="300">
+        <span>End-to-end latency: <strong>&lt;400ms</strong></span>
+      </div>
+
+      <!-- <video id="signal-video" src="assets/signal-demo.mp4" muted loop playsinline></video> -->
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 10. GLOVES FEATURE CARDS                     -->
+  <!-- ============================================ -->
+  <section id="gloves-features">
+    <div class="features-sticky">
+      <div class="features-inner">
+        <!-- Left: Fixed heading -->
+        <div class="features-left">
+          <span class="features-label"
+                data-en="HOW DRISHTI GLOVES WORK"
+                data-hi="दृष्टि ग्लव्स कैसे काम करते हैं">HOW DRISHTI GLOVES WORK</span>
+          <h2 class="mag-text features-title"
+              data-en="Four steps. One voice."
+              data-hi="चार चरण। एक आवाज़।">Four steps. One voice.</h2>
+          <div class="features-desc" id="gloves-feature-desc">
+            <p data-en="Each gesture is captured, classified, spoken, and connected — in under 400 milliseconds."
+               data-hi="प्रत्येक इशारा कैप्चर, वर्गीकृत, बोला और जोड़ा जाता है — 400 मिलीसेकंड से कम में।">Each gesture is captured, classified, spoken, and connected — in under 400 milliseconds.</p>
+          </div>
+          <div class="features-progress">
+            <div class="progress-segment active" data-index="0"></div>
+            <div class="progress-segment" data-index="1"></div>
+            <div class="progress-segment" data-index="2"></div>
+            <div class="progress-segment" data-index="3"></div>
+          </div>
+        </div>
+
+        <!-- Right: Scrolling cards -->
+        <div class="features-right">
+          <div class="feature-card feature-card-orange" data-index="0">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-hand-grab"></i></div>
+            <h3 data-en="Capture" data-hi="कैप्चर">Capture</h3>
+            <p data-en="5 flex sensors detect finger bending angles. MPU6050 tracks wrist orientation and motion in 6 axes. ADS1115 converts analog signals to precise 16-bit digital data."
+               data-hi="5 फ्लेक्स सेंसर उँगली मोड़ कोणों का पता लगाते हैं। MPU6050 कलाई अभिविन्यास और गति को 6 अक्षों में ट्रैक करता है।">5 flex sensors detect finger bending angles. MPU6050 tracks wrist orientation and motion in 6 axes. ADS1115 converts analog signals to precise 16-bit digital data.</p>
+          </div>
+
+          <div class="feature-card feature-card-orange" data-index="1">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-brain"></i></div>
+            <h3 data-en="Classify" data-hi="वर्गीकरण">Classify</h3>
+            <p data-en="ESP32 packages sensor data and transmits over WiFi to a laptop running a trained scikit-learn Random Forest model. 40+ ISL signs are recognized with 92% accuracy."
+               data-hi="ESP32 सेंसर डेटा पैकेज करता है और WiFi के माध्यम से प्रशिक्षित scikit-learn मॉडल चलाने वाले लैपटॉप पर भेजता है।">ESP32 packages sensor data and transmits over WiFi to a laptop running a trained scikit-learn Random Forest model. 40+ ISL signs are recognized with 92% accuracy.</p>
+          </div>
+
+          <div class="feature-card feature-card-orange" data-index="2">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-volume"></i></div>
+            <h3 data-en="Speak" data-hi="बोलना">Speak</h3>
+            <p data-en="The recognized ISL sign is instantly converted to spoken Hindi using pyttsx3 text-to-speech engine. The output is clear, natural-sounding speech that bridges the communication gap."
+               data-hi="पहचाने गए ISL संकेत को तुरंत pyttsx3 टेक्स्ट-टू-स्पीच इंजन का उपयोग करके बोली जाने वाली हिंदी में बदल दिया जाता है।">The recognized ISL sign is instantly converted to spoken Hindi using pyttsx3 text-to-speech engine. The output is clear, natural-sounding speech that bridges the communication gap.</p>
+          </div>
+
+          <div class="feature-card feature-card-orange" data-index="3">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-plug-connected"></i></div>
+            <h3 data-en="Connect" data-hi="जोड़ना">Connect</h3>
+            <p data-en="DRISHTI Gloves seamlessly connect to any WiFi network. Real-time data streaming means zero lag between gesture and speech. Future plans include Bluetooth LE for direct mobile pairing."
+               data-hi="दृष्टि ग्लव्स किसी भी WiFi नेटवर्क से आसानी से जुड़ जाते हैं। रीयल-टाइम डेटा स्ट्रीमिंग का मतलब इशारे और भाषण के बीच शून्य अंतराल है।">DRISHTI Gloves seamlessly connect to any WiFi network. Real-time data streaming means zero lag between gesture and speech. Future plans include Bluetooth LE for direct mobile pairing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 11. KAI LOCKET                               -->
+  <!-- ============================================ -->
+  <section id="kai">
+    <div class="kai-sticky">
+      <div class="kai-content">
+        <!-- Left: 3D Canvas -->
+        <div class="kai-left">
+          <canvas id="locket-canvas"></canvas>
+          <div class="ar-label ar-label-camera" data-component="camera">Pi Camera</div>
+          <div class="ar-label ar-label-pi" data-component="pi">Pi Zero 2WH</div>
+          <div class="ar-label ar-label-mic" data-component="mic">INMP441 Mic</div>
+          <div class="ar-label ar-label-display" data-component="display">SPI Display</div>
+          <div class="ar-label ar-label-speaker-kai" data-component="speaker">Speaker</div>
+        </div>
+
+        <!-- Right: Content phases -->
+        <div class="kai-right">
+          <div class="content-phases">
+            <!-- Phase 1: Overview -->
+            <div class="phase phase-1 active">
+              <span class="phase-label reveal"
+                    data-en="KAI LOCKET"
+                    data-hi="KAI लॉकेट">KAI LOCKET</span>
+              <h2 class="mag-text phase-title reveal" data-delay="100"
+                  data-en="Your AI Eyes Around Your Neck"
+                  data-hi="आपकी गर्दन में AI आँखें">Your AI Eyes Around Your Neck</h2>
+              <p class="phase-desc reveal" data-delay="200"
+                 data-en="KAI is a pendant-sized AI assistant for the visually impaired. It sees objects, reads currency, scans QR codes, and responds to voice commands — all powered by a Raspberry Pi Zero 2WH."
+                 data-hi="KAI दृष्टिबाधित लोगों के लिए एक पेंडेंट-आकार का AI सहायक है। यह वस्तुओं को देखता है, मुद्रा पढ़ता है, QR कोड स्कैन करता है, और आवाज़ कमांड का जवाब देता है।">KAI is a pendant-sized AI assistant for the visually impaired. It sees objects, reads currency, scans QR codes, and responds to voice commands — all powered by a Raspberry Pi Zero 2WH.</p>
+              <div class="tech-chips reveal" data-delay="300">
+                <span class="tech-chip tech-chip-teal">Pi Zero 2WH</span>
+                <span class="tech-chip tech-chip-teal">Pi Camera</span>
+                <span class="tech-chip tech-chip-teal">INMP441</span>
+                <span class="tech-chip tech-chip-teal">YOLOv8</span>
+                <span class="tech-chip tech-chip-teal">Vosk</span>
+                <span class="tech-chip tech-chip-teal">Gemini API</span>
+              </div>
+            </div>
+
+            <!-- Phase 2: Components -->
+            <div class="phase phase-2">
+              <span class="phase-label">COMPONENT BREAKDOWN</span>
+              <h2 class="mag-text phase-title"
+                  data-en="Inside the Locket"
+                  data-hi="लॉकेट के अंदर">Inside the Locket</h2>
+              <ul class="component-checklist">
+                <li class="component-item" data-component="camera">
+                  <i class="ti ti-check"></i>
+                  <span>Pi Camera Module — 5MP wide-angle vision</span>
+                </li>
+                <li class="component-item" data-component="pi">
+                  <i class="ti ti-check"></i>
+                  <span>Raspberry Pi Zero 2WH — quad-core brain</span>
+                </li>
+                <li class="component-item" data-component="mic">
+                  <i class="ti ti-check"></i>
+                  <span>INMP441 — digital MEMS microphone</span>
+                </li>
+                <li class="component-item" data-component="display">
+                  <i class="ti ti-check"></i>
+                  <span>SPI Display — status and feedback screen</span>
+                </li>
+                <li class="component-item" data-component="speaker">
+                  <i class="ti ti-check"></i>
+                  <span>Mini Speaker — audio output for navigation</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Phase 3: AI Pipeline -->
+            <div class="phase phase-3">
+              <span class="phase-label">AI PIPELINE</span>
+              <h2 class="mag-text phase-title"
+                  data-en="How KAI Thinks"
+                  data-hi="KAI कैसे सोचता है">How KAI Thinks</h2>
+              <div class="pipeline-nodes">
+                <div class="pipeline-node">
+                  <div class="pipeline-dot pipeline-dot-teal"></div>
+                  <span>Camera captures the scene ahead</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot pipeline-dot-teal"></div>
+                  <span>YOLOv8 detects objects in frame</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot pipeline-dot-teal"></div>
+                  <span>Vosk processes voice commands offline</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot pipeline-dot-teal"></div>
+                  <span>Gemini API provides contextual intelligence</span>
+                </div>
+                <div class="pipeline-node">
+                  <div class="pipeline-dot pipeline-dot-teal"></div>
+                  <span>pyttsx3 speaks the response aloud</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phase 4: Complete -->
+            <div class="phase phase-4">
+              <span class="phase-label">COMPLETE SYSTEM</span>
+              <h2 class="mag-text phase-title"
+                  data-en="Ready to Guide"
+                  data-hi="मार्गदर्शन के लिए तैयार">Ready to Guide</h2>
+              <p class="phase-desc"
+                 data-en="Worn like a pendant, KAI gives the visually impaired independence through real-time object detection, currency identification, QR scanning, and conversational AI — all offline-first."
+                 data-hi="एक पेंडेंट की तरह पहना, KAI दृष्टिबाधित लोगों को रीयल-टाइम ऑब्जेक्ट डिटेक्शन, मुद्रा पहचान, QR स्कैनिंग, और संवादात्मक AI के माध्यम से स्वतंत्रता प्रदान करता है।">Worn like a pendant, KAI gives the visually impaired independence through real-time object detection, currency identification, QR scanning, and conversational AI — all offline-first.</p>
+              <div class="reassembly-stats">
+                <div class="reassembly-stat">
+                  <span class="reassembly-number reassembly-teal">80+</span>
+                  <span class="reassembly-label">Objects Detected</span>
+                </div>
+                <div class="reassembly-stat">
+                  <span class="reassembly-number reassembly-teal">7</span>
+                  <span class="reassembly-label">Currency Notes</span>
+                </div>
+                <div class="reassembly-stat">
+                  <span class="reassembly-number reassembly-teal">Offline</span>
+                  <span class="reassembly-label">Core Functions</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 12. KAI LENS VIEW                            -->
+  <!-- ============================================ -->
+  <section id="kai-lens">
+    <div class="container">
+      <span class="section-label reveal"
+            data-en="WHAT KAI SEES"
+            data-hi="KAI क्या देखता है">WHAT KAI SEES</span>
+      <h2 class="mag-text section-heading reveal" data-delay="100"
+          data-en="The World Through KAI"
+          data-hi="KAI की नज़र से दुनिया">The World Through KAI</h2>
+
+      <div class="lens-viewport reveal reveal-scale" data-delay="200">
+        <div class="lens-live">LIVE</div>
+        <div class="lens-rec">&#x25CF; REC</div>
+
+        <div class="lens-phase lens-phase-1 active">
+          <div class="lens-box lens-box-1">
+            <span class="lens-box-label">person (0.94)</span>
+          </div>
+          <div class="lens-box lens-box-2">
+            <span class="lens-box-label">chair (0.87)</span>
+          </div>
+          <div class="lens-box lens-box-3">
+            <span class="lens-box-label">bottle (0.91)</span>
+          </div>
+          <div class="lens-overlay-text">Object Detection &middot; YOLOv8</div>
+        </div>
+
+        <div class="lens-phase lens-phase-2">
+          <div class="lens-currency">
+            <div class="lens-currency-outline"></div>
+            <span class="lens-currency-value">&#x20B9;500</span>
+          </div>
+          <div class="lens-overlay-text">Currency Recognition &middot; CNN Model</div>
+        </div>
+
+        <div class="lens-phase lens-phase-3">
+          <div class="lens-qr">
+            <div class="lens-qr-grid"></div>
+            <span class="lens-qr-result">upi://pay?pa=example@upi</span>
+          </div>
+          <div class="lens-overlay-text">QR Code Scanner &middot; OpenCV</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 13. KAI FEATURE CARDS                        -->
+  <!-- ============================================ -->
+  <section id="kai-features">
+    <div class="features-sticky">
+      <div class="features-inner">
+        <!-- Left: Fixed heading -->
+        <div class="features-left">
+          <span class="features-label"
+                data-en="HOW KAI LOCKET WORKS"
+                data-hi="KAI लॉकेट कैसे काम करता है">HOW KAI LOCKET WORKS</span>
+          <h2 class="mag-text features-title"
+              data-en="See. Listen. Think. Respond."
+              data-hi="देखो। सुनो। सोचो। जवाब दो।">See. Listen. Think. Respond.</h2>
+          <div class="features-desc" id="kai-feature-desc">
+            <p data-en="KAI processes the visual world and voice commands to deliver real-time spoken guidance for the visually impaired."
+               data-hi="KAI दृश्य दुनिया और आवाज़ कमांड को प्रोसेस करके दृष्टिबाधित लोगों को रीयल-टाइम बोला मार्गदर्शन प्रदान करता है।">KAI processes the visual world and voice commands to deliver real-time spoken guidance for the visually impaired.</p>
+          </div>
+          <div class="features-progress">
+            <div class="progress-segment progress-segment-teal active" data-index="0"></div>
+            <div class="progress-segment progress-segment-teal" data-index="1"></div>
+            <div class="progress-segment progress-segment-teal" data-index="2"></div>
+            <div class="progress-segment progress-segment-teal" data-index="3"></div>
+          </div>
+        </div>
+
+        <!-- Right: Scrolling cards -->
+        <div class="features-right">
+          <div class="feature-card feature-card-teal" data-index="0">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-eye"></i></div>
+            <h3 data-en="See" data-hi="देखना">See</h3>
+            <p data-en="Pi Camera captures a wide-angle view of the world ahead. YOLOv8 runs object detection to identify people, furniture, vehicles, and obstacles in real-time."
+               data-hi="Pi कैमरा आगे की दुनिया का वाइड-एंगल दृश्य कैप्चर करता है। YOLOv8 रीयल-टाइम में लोगों, फर्नीचर, वाहनों और बाधाओं की पहचान करता है।">Pi Camera captures a wide-angle view of the world ahead. YOLOv8 runs object detection to identify people, furniture, vehicles, and obstacles in real-time.</p>
+          </div>
+
+          <div class="feature-card feature-card-teal" data-index="1">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-ear"></i></div>
+            <h3 data-en="Listen" data-hi="सुनना">Listen</h3>
+            <p data-en="INMP441 digital MEMS microphone captures voice commands. Vosk speech recognition processes Hindi commands entirely offline — no internet needed for core functions."
+               data-hi="INMP441 डिजिटल MEMS माइक्रोफोन आवाज़ कमांड कैप्चर करता है। Vosk स्पीच रिकग्निशन हिंदी कमांड को पूरी तरह ऑफलाइन प्रोसेस करता है।">INMP441 digital MEMS microphone captures voice commands. Vosk speech recognition processes Hindi commands entirely offline — no internet needed for core functions.</p>
+          </div>
+
+          <div class="feature-card feature-card-teal" data-index="2">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-brain"></i></div>
+            <h3 data-en="Think" data-hi="सोचना">Think</h3>
+            <p data-en="Gemini API provides contextual intelligence for complex queries. The system combines object detection, currency recognition, and QR scanning to build a complete understanding of the scene."
+               data-hi="Gemini API जटिल प्रश्नों के लिए संदर्भगत बुद्धिमत्ता प्रदान करता है। सिस्टम ऑब्जेक्ट डिटेक्शन, मुद्रा पहचान और QR स्कैनिंग को मिलाता है।">Gemini API provides contextual intelligence for complex queries. The system combines object detection, currency recognition, and QR scanning to build a complete understanding of the scene.</p>
+          </div>
+
+          <div class="feature-card feature-card-teal" data-index="3">
+            <div class="corner-tl"></div><div class="corner-tr"></div>
+            <div class="corner-bl"></div><div class="corner-br"></div>
+            <div class="feature-card-icon"><i class="ti ti-message-2"></i></div>
+            <h3 data-en="Respond" data-hi="जवाब देना">Respond</h3>
+            <p data-en="pyttsx3 converts the AI's understanding into clear spoken Hindi. 'Aapke saamne ek kursi hai' — KAI speaks naturally, giving blind users confidence to navigate independently."
+               data-hi="pyttsx3 AI की समझ को स्पष्ट बोली हिंदी में बदलता है। 'आपके सामने एक कुर्सी है' — KAI स्वाभाविक रूप से बोलता है।">pyttsx3 converts the AI's understanding into clear spoken Hindi. "Aapke saamne ek kursi hai" — KAI speaks naturally, giving blind users confidence to navigate independently.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 14. HOW IT WORKS                             -->
+  <!-- ============================================ -->
+  <section id="how-it-works" class="bg-light">
+    <div class="container">
+      <h2 class="mag-text section-heading reveal"
+          data-en="How DRISHTI Works"
+          data-hi="दृष्टि कैसे काम करती है">How DRISHTI Works</h2>
+
+      <div class="how-timeline">
+        <div class="how-line"></div>
+
+        <div class="how-step how-step-left reveal reveal-left" data-delay="0">
+          <div class="how-step-content">
+            <div class="how-step-number">01</div>
+            <h3 data-en="Wear the Device" data-hi="डिवाइस पहनें">Wear the Device</h3>
+            <p data-en="Slip on the Smart Gloves or hang the KAI Locket around your neck. Both devices power on with a single button press and connect automatically."
+               data-hi="स्मार्ट ग्लव्स पहनें या KAI लॉकेट गले में लटकाएँ। दोनों डिवाइस एक बटन दबाने से चालू होते हैं।">Slip on the Smart Gloves or hang the KAI Locket around your neck. Both devices power on with a single button press and connect automatically.</p>
+          </div>
+          <div class="how-step-dot"></div>
+        </div>
+
+        <div class="how-step how-step-right reveal reveal-right" data-delay="100">
+          <div class="how-step-dot"></div>
+          <div class="how-step-content">
+            <div class="how-step-number">02</div>
+            <h3 data-en="Sense the World" data-hi="दुनिया को महसूस करें">Sense the World</h3>
+            <p data-en="Flex sensors read finger positions for sign language. The Pi Camera captures the visual environment. INMP441 microphone listens for voice commands."
+               data-hi="फ्लेक्स सेंसर सांकेतिक भाषा के लिए उँगली की स्थिति पढ़ते हैं। Pi कैमरा दृश्य वातावरण कैप्चर करता है।">Flex sensors read finger positions for sign language. The Pi Camera captures the visual environment. INMP441 microphone listens for voice commands.</p>
+          </div>
+        </div>
+
+        <div class="how-step how-step-left reveal reveal-left" data-delay="200">
+          <div class="how-step-content">
+            <div class="how-step-number">03</div>
+            <h3 data-en="Process with AI" data-hi="AI से प्रोसेस करें">Process with AI</h3>
+            <p data-en="Machine learning models classify ISL gestures. YOLOv8 detects objects. Vosk transcribes speech. Gemini API answers complex questions. All in real-time."
+               data-hi="मशीन लर्निंग मॉडल ISL इशारों को वर्गीकृत करते हैं। YOLOv8 वस्तुओं का पता लगाता है। Vosk भाषण को ट्रांसक्राइब करता है।">Machine learning models classify ISL gestures. YOLOv8 detects objects. Vosk transcribes speech. Gemini API answers complex questions. All in real-time.</p>
+          </div>
+          <div class="how-step-dot"></div>
+        </div>
+
+        <div class="how-step how-step-right reveal reveal-right" data-delay="300">
+          <div class="how-step-dot"></div>
+          <div class="how-step-content">
+            <div class="how-step-number">04</div>
+            <h3 data-en="Speak the Output" data-hi="आउटपुट बोलें">Speak the Output</h3>
+            <p data-en="pyttsx3 text-to-speech converts the AI output into clear spoken Hindi. The gloves speak the recognized sign. KAI describes what it sees ahead."
+               data-hi="pyttsx3 टेक्स्ट-टू-स्पीच AI आउटपुट को स्पष्ट बोली हिंदी में बदलता है।">pyttsx3 text-to-speech converts the AI output into clear spoken Hindi. The gloves speak the recognized sign. KAI describes what it sees ahead.</p>
+          </div>
+        </div>
+
+        <div class="how-step how-step-left reveal reveal-left" data-delay="400">
+          <div class="how-step-content">
+            <div class="how-step-number">05</div>
+            <h3 data-en="Live Independently" data-hi="स्वतंत्र रूप से जिएँ">Live Independently</h3>
+            <p data-en="With DRISHTI, deaf users can communicate freely and blind users can navigate confidently. Two systems, one mission: breaking barriers for millions of Indians."
+               data-hi="दृष्टि के साथ, बधिर उपयोगकर्ता स्वतंत्र रूप से संवाद कर सकते हैं और नेत्रहीन उपयोगकर्ता आत्मविश्वास से नेविगेट कर सकते हैं।">With DRISHTI, deaf users can communicate freely and blind users can navigate confidently. Two systems, one mission: breaking barriers for millions of Indians.</p>
+          </div>
+          <div class="how-step-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 15. ISL GALLERY                              -->
+  <!-- ============================================ -->
+  <section id="isl-gallery" class="bg-lavender">
+    <div class="container">
+      <h2 class="mag-text section-heading reveal"
+          data-en="Signs DRISHTI Knows"
+          data-hi="दृष्टि जिन संकेतों को जानती है">Signs DRISHTI Knows</h2>
+
+      <div class="isl-scroll-wrapper">
+        <button class="isl-arrow isl-arrow-left" aria-label="Scroll left">
+          <i class="ti ti-chevron-left"></i>
+        </button>
+
+        <div class="isl-scroll-container">
+          <div class="isl-card reveal" data-delay="0">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x1F64F;</span>
+            </div>
+            <div class="isl-card-label">&#x0928;&#x092E;&#x0938;&#x094D;&#x0924;&#x0947;</div>
+            <div class="isl-card-english">Namaste</div>
+          </div>
+
+          <div class="isl-card reveal" data-delay="50">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x1F44D;</span>
+            </div>
+            <div class="isl-card-label">&#x0939;&#x093E;&#x0901;</div>
+            <div class="isl-card-english">Yes</div>
+          </div>
+
+          <div class="isl-card reveal" data-delay="100">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x270B;</span>
+            </div>
+            <div class="isl-card-label">&#x0928;&#x0939;&#x0940;&#x0902;</div>
+            <div class="isl-card-english">No</div>
+          </div>
+
+          <div class="isl-card reveal" data-delay="150">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x1F4A7;</span>
+            </div>
+            <div class="isl-card-label">&#x092A;&#x093E;&#x0928;&#x0940;</div>
+            <div class="isl-card-english">Water</div>
+          </div>
+
+          <div class="isl-card reveal" data-delay="200">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x1F64C;</span>
+            </div>
+            <div class="isl-card-label">&#x0927;&#x0928;&#x094D;&#x092F;&#x0935;&#x093E;&#x0926;</div>
+            <div class="isl-card-english">Thank You</div>
+          </div>
+
+          <div class="isl-card reveal" data-delay="250">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x1F198;</span>
+            </div>
+            <div class="isl-card-label">&#x092E;&#x0926;&#x0926;</div>
+            <div class="isl-card-english">Help</div>
+          </div>
+
+          <div class="isl-card reveal" data-delay="300">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x1F3E0;</span>
+            </div>
+            <div class="isl-card-label">&#x0918;&#x0930;</div>
+            <div class="isl-card-english">Home</div>
+          </div>
+
+          <div class="isl-card reveal" data-delay="350">
+            <div class="isl-card-visual">
+              <span class="isl-emoji">&#x1F35A;</span>
+            </div>
+            <div class="isl-card-label">&#x0916;&#x093E;&#x0928;&#x093E;</div>
+            <div class="isl-card-english">Food</div>
+          </div>
+        </div>
+
+        <button class="isl-arrow isl-arrow-right" aria-label="Scroll right">
+          <i class="ti ti-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 16. ARCHITECTURE                             -->
+  <!-- ============================================ -->
+  <section id="architecture">
+    <div class="container">
+      <h2 class="mag-text section-heading reveal"
+          data-en="How It All Connects"
+          data-hi="यह सब कैसे जुड़ता है">How It All Connects</h2>
+
+      <div class="mindmap-wrapper reveal reveal-scale" data-delay="200">
+        <canvas id="mindmap-canvas"></canvas>
+      </div>
+
+      <div class="mindmap-popup" id="mindmap-popup">
+        <div class="mindmap-popup-title"></div>
+        <div class="mindmap-popup-desc"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 17. TECH STACK                               -->
+  <!-- ============================================ -->
+  <section id="tech-stack" class="bg-light">
+    <div class="container">
+      <h2 class="mag-text section-heading reveal"
+          data-en="Technology Stack"
+          data-hi="प्रौद्योगिकी स्टैक">Technology Stack</h2>
+
+      <!-- HARDWARE GROUP -->
+      <div class="tech-group">
+        <h3 class="tech-group-title reveal" data-delay="100"
+            data-en="HARDWARE"
+            data-hi="हार्डवेयर">HARDWARE</h3>
+        <div class="tech-grid">
+          <div class="flip-card reveal" data-delay="100">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="ESP32" loading="lazy">
+                <span>ESP32</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>ESP32</h4>
+                <p>Dual-core WiFi/BLE microcontroller. Reads sensor data and transmits to ML model wirelessly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="150">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-cpu" style="font-size:48px;color:var(--orange);"></i>
+                <span>ADS1115</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>ADS1115</h4>
+                <p>16-bit ADC converter. Precisely digitizes analog flex sensor values for accurate gesture detection.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="200">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-3d-cube-sphere" style="font-size:48px;color:var(--orange);"></i>
+                <span>MPU6050</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>MPU6050</h4>
+                <p>6-axis IMU with accelerometer and gyroscope. Tracks hand orientation and dynamic gestures.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="250">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-hand-finger" style="font-size:48px;color:var(--orange);"></i>
+                <span>Flex Sensors</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>Flex Sensors</h4>
+                <p>5 resistive flex sensors per glove. Each maps finger bend angle to a resistance value for ISL detection.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="300">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg" alt="Pi Zero 2WH" loading="lazy">
+                <span>Pi Zero 2WH</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>Pi Zero 2WH</h4>
+                <p>Quad-core ARM brain of KAI Locket. Runs YOLOv8, Vosk, and Gemini API integration in a tiny form factor.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="350">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-camera" style="font-size:48px;color:var(--teal);"></i>
+                <span>Pi Camera</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>Pi Camera</h4>
+                <p>5MP camera module for KAI. Captures wide-angle frames for object detection and currency recognition.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="400">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-microphone" style="font-size:48px;color:var(--teal);"></i>
+                <span>INMP441</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>INMP441</h4>
+                <p>Digital I2S MEMS microphone. Captures clear voice commands for Vosk speech recognition processing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="450">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-device-tablet" style="font-size:48px;color:var(--teal);"></i>
+                <span>SPI Display</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>SPI Display</h4>
+                <p>Small SPI-connected screen on KAI Locket. Shows system status, detected objects, and feedback information.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOFTWARE GROUP -->
+      <div class="tech-group">
+        <h3 class="tech-group-title reveal" data-delay="100"
+            data-en="SOFTWARE &amp; AI"
+            data-hi="सॉफ्टवेयर और AI">SOFTWARE &amp; AI</h3>
+        <div class="tech-grid">
+          <div class="flip-card reveal" data-delay="100">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy">
+                <span>Python</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>Python</h4>
+                <p>Primary programming language for both systems. Handles ML inference, computer vision, and speech processing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="150">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV" loading="lazy">
+                <span>OpenCV</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>OpenCV</h4>
+                <p>Computer vision library. Handles image preprocessing, QR code detection, and currency note scanning in KAI.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="200">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-chart-dots-3" style="font-size:48px;color:var(--orange);"></i>
+                <span>scikit-learn</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>scikit-learn</h4>
+                <p>Random Forest classifier trained on ISL gesture data. Achieves 92% accuracy across 40+ signs with low latency.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="250">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-box" style="font-size:48px;color:var(--teal);"></i>
+                <span>YOLOv8</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>YOLOv8</h4>
+                <p>Ultralytics object detection model. Identifies 80+ objects in real-time for KAI's navigation assistance.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="300">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-microphone-2" style="font-size:48px;color:var(--teal);"></i>
+                <span>Vosk</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>Vosk</h4>
+                <p>Offline speech recognition for Hindi. Processes voice commands without internet — critical for rural accessibility.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="350">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-volume" style="font-size:48px;color:var(--orange);"></i>
+                <span>pyttsx3</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>pyttsx3</h4>
+                <p>Offline text-to-speech engine. Converts recognized signs and AI responses to spoken Hindi audio output.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="400">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-sparkles" style="font-size:48px;color:var(--teal);"></i>
+                <span>Gemini API</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>Gemini API</h4>
+                <p>Google's multimodal AI. Provides contextual intelligence for KAI — answering complex user questions about surroundings.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="450">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original.svg" alt="Three.js" loading="lazy">
+                <span>Three.js</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>Three.js</h4>
+                <p>3D rendering for the DRISHTI website. Powers interactive glove and locket models with orbit controls.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card reveal" data-delay="500">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ti ti-brand-javascript" style="font-size:48px;color:#88d65d;"></i>
+                <span>GSAP</span>
+              </div>
+              <div class="flip-card-back">
+                <h4>GSAP</h4>
+                <p>GreenSock Animation Platform. Handles scroll-triggered animations, phase transitions, and smooth UI effects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 18. TIMELINE                                 -->
+  <!-- ============================================ -->
+  <section id="timeline">
+    <div class="container">
+      <h2 class="mag-text section-heading reveal"
+          data-en="Competition Journey"
+          data-hi="प्रतियोगिता यात्रा">Competition Journey</h2>
+
+      <div class="competition-timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item reveal reveal-left" data-delay="0">
+          <div class="timeline-dot timeline-dot-completed"></div>
+          <div class="timeline-content">
+            <span class="timeline-status status-completed">COMPLETED</span>
+            <h3 data-en="School Level" data-hi="विद्यालय स्तर">School Level</h3>
+            <p data-en="Selected as the top innovation project at school level. DRISHTI's dual-system approach impressed the judges."
+               data-hi="विद्यालय स्तर पर शीर्ष नवाचार परियोजना के रूप में चयनित।">Selected as the top innovation project at school level. DRISHTI's dual-system approach impressed the judges.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-right" data-delay="100">
+          <div class="timeline-dot timeline-dot-completed"></div>
+          <div class="timeline-content">
+            <span class="timeline-status status-completed">COMPLETED</span>
+            <h3 data-en="District Level — Sonipat" data-hi="जिला स्तर — सोनीपत">District Level — Sonipat</h3>
+            <p data-en="Advanced through district level competition in Sonipat, Haryana. Live demonstration of both Smart Gloves and KAI Locket."
+               data-hi="सोनीपत, हरियाणा में जिला स्तरीय प्रतियोगिता से आगे बढ़े।">Advanced through district level competition in Sonipat, Haryana. Live demonstration of both Smart Gloves and KAI Locket.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-left" data-delay="200">
+          <div class="timeline-dot timeline-dot-current"></div>
+          <div class="timeline-content">
+            <span class="timeline-status status-current">CURRENT</span>
+            <h3 data-en="State Level — Haryana" data-hi="राज्य स्तर — हरियाणा">State Level — Haryana</h3>
+            <p data-en="Currently preparing for the state-level exhibition in Haryana. Refining hardware, expanding ISL vocabulary, and optimizing KAI's detection models."
+               data-hi="वर्तमान में हरियाणा में राज्य-स्तरीय प्रदर्शनी की तैयारी। हार्डवेयर को परिष्कृत कर रहे हैं।">Currently preparing for the state-level exhibition in Haryana. Refining hardware, expanding ISL vocabulary, and optimizing KAI's detection models.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-right" data-delay="300">
+          <div class="timeline-dot timeline-dot-goal"></div>
+          <div class="timeline-content">
+            <span class="timeline-status status-goal">GOAL</span>
+            <h3 data-en="National Level — IISF" data-hi="राष्ट्रीय स्तर — IISF">National Level — IISF</h3>
+            <p data-en="Represent Haryana at the India International Science Festival. Showcase DRISHTI to national judges and policy makers."
+               data-hi="भारत अंतर्राष्ट्रीय विज्ञान महोत्सव में हरियाणा का प्रतिनिधित्व करें।">Represent Haryana at the India International Science Festival. Showcase DRISHTI to national judges and policy makers.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-left" data-delay="400">
+          <div class="timeline-dot timeline-dot-dream"></div>
+          <div class="timeline-content">
+            <span class="timeline-status status-dream">DREAM</span>
+            <h3 data-en="MANAK Award &amp; &#x20B9;1 Lakh Grant" data-hi="मानक पुरस्कार और ₹1 लाख अनुदान">MANAK Award &amp; &#x20B9;1 Lakh Grant</h3>
+            <p data-en="Win the MANAK Inspire Award and receive the ₹1,00,000 grant to fund further development and field deployment of DRISHTI."
+               data-hi="मानक इंस्पायर पुरस्कार जीतें और दृष्टि के आगे के विकास के लिए ₹1,00,000 अनुदान प्राप्त करें।">Win the MANAK Inspire Award and receive the &#x20B9;1,00,000 grant to fund further development and field deployment of DRISHTI.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal reveal-right" data-delay="500">
+          <div class="timeline-dot timeline-dot-vision"></div>
+          <div class="timeline-content">
+            <span class="timeline-status status-vision">VISION</span>
+            <h3 data-en="Deploy Across India" data-hi="पूरे भारत में तैनात करें">Deploy Across India</h3>
+            <p data-en="Manufacture DRISHTI at scale and distribute to schools for the deaf and blind across India. Make assistive AI affordable and accessible for every Indian who needs it."
+               data-hi="बड़े पैमाने पर दृष्टि का निर्माण करें और पूरे भारत में बधिर और नेत्रहीन विद्यालयों में वितरित करें।">Manufacture DRISHTI at scale and distribute to schools for the deaf and blind across India. Make assistive AI affordable and accessible for every Indian who needs it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 19. CREATOR                                  -->
+  <!-- ============================================ -->
+  <section id="creator" class="bg-light">
+    <div class="container">
+      <h2 class="mag-text section-heading reveal"
+          data-en="The Creator"
+          data-hi="निर्माता">The Creator</h2>
+
+      <div class="creator-card reveal reveal-scale" data-delay="200">
+        <div class="creator-avatar">
+          <span class="creator-initials">AM</span>
+        </div>
+
+        <h3 class="creator-name">
+          <span class="typewriter" data-en="Atul Malik" data-hi="अतुल मलिक">Atul Malik</span>
+        </h3>
+
+        <p class="creator-role"
+           data-en="Student Innovator &middot; Class XII"
+           data-hi="छात्र नवाचारक &middot; कक्षा XII">Student Innovator &middot; Class XII</p>
+
+        <div class="creator-info-grid">
+          <div class="creator-info-item">
+            <i class="ti ti-map-pin"></i>
+            <span data-en="Gohana, Sonipat, Haryana" data-hi="गोहाना, सोनीपत, हरियाणा">Gohana, Sonipat, Haryana</span>
+          </div>
+          <div class="creator-info-item">
+            <i class="ti ti-cake"></i>
+            <span data-en="16 years old" data-hi="16 वर्ष">16 years old</span>
+          </div>
+          <div class="creator-info-item">
+            <i class="ti ti-school"></i>
+            <span data-en="Government School, Gohana" data-hi="सरकारी विद्यालय, गोहाना">Government School, Gohana</span>
+          </div>
+          <div class="creator-info-item">
+            <i class="ti ti-trophy"></i>
+            <span data-en="MANAK Inspire 2026 Nominee" data-hi="मानक इंस्पायर 2026 नामांकित">MANAK Inspire 2026 Nominee</span>
+          </div>
+        </div>
+
+        <div class="creator-qualities">
+          <div class="quality-card reveal" data-delay="300">
+            <i class="ti ti-bulb"></i>
+            <h4 data-en="Self-Taught" data-hi="स्वयं-शिक्षित">Self-Taught</h4>
+            <p data-en="Learned Python, ML, electronics, and 3D modeling entirely through YouTube and open-source resources."
+               data-hi="YouTube और ओपन-सोर्स संसाधनों के माध्यम से पूरी तरह से Python, ML, इलेक्ट्रॉनिक्स और 3D मॉडलिंग सीखी।">Learned Python, ML, electronics, and 3D modeling entirely through YouTube and open-source resources.</p>
+          </div>
+          <div class="quality-card reveal" data-delay="400">
+            <i class="ti ti-heart"></i>
+            <h4 data-en="Mission-Driven" data-hi="मिशन-प्रेरित">Mission-Driven</h4>
+            <p data-en="Building DRISHTI not for grades or prizes, but because 85 million Indians deserve to communicate and navigate freely."
+               data-hi="दृष्टि ग्रेड या पुरस्कारों के लिए नहीं, बल्कि इसलिए बना रहे हैं क्योंकि 85 मिलियन भारतीय स्वतंत्र रूप से संवाद और नेविगेट करने के हकदार हैं।">Building DRISHTI not for grades or prizes, but because 85 million Indians deserve to communicate and navigate freely.</p>
+          </div>
+          <div class="quality-card reveal" data-delay="500">
+            <i class="ti ti-rocket"></i>
+            <h4 data-en="Resourceful" data-hi="साधन-संपन्न">Resourceful</h4>
+            <p data-en="Built a dual AI system for under ₹8,000 total — proving that world-class assistive technology doesn't need a world-class budget."
+               data-hi="कुल ₹8,000 से कम में एक दोहरी AI प्रणाली बनाई — यह साबित करते हुए कि विश्वस्तरीय सहायक तकनीक को विश्वस्तरीय बजट की ज़रूरत नहीं है।">Built a dual AI system for under &#x20B9;8,000 total — proving that world-class assistive technology doesn't need a world-class budget.</p>
+          </div>
+        </div>
+
+        <blockquote class="creator-quote reveal" data-delay="600">
+          <p data-en="&ldquo;I don't have a fancy lab or expensive tools. But I have Python, a soldering iron, and 85 million reasons to keep building.&rdquo;"
+             data-hi="&ldquo;मेरे पास कोई शानदार लैब या महँगे उपकरण नहीं हैं। लेकिन मेरे पास Python, एक सोल्डरिंग आयरन, और बनाते रहने के 85 मिलियन कारण हैं।&rdquo;">&ldquo;I don't have a fancy lab or expensive tools. But I have Python, a soldering iron, and 85 million reasons to keep building.&rdquo;</p>
+          <cite>— Atul Malik</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 20. FOOTER                                   -->
+  <!-- ============================================ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <!-- Column 1: Logo + Tagline -->
+        <div class="footer-col">
+          <div class="footer-logo">DRISHTI</div>
+          <p class="footer-tagline"
+             data-en="Dual Assistive AI System for the deaf, mute, and visually impaired. Built in Gohana, India."
+             data-hi="बधिर, मूक और दृष्टिबाधित लोगों के लिए दोहरी सहायक AI प्रणाली। गोहाना, भारत में निर्मित।">Dual Assistive AI System for the deaf, mute, and visually impaired. Built in Gohana, India.</p>
+        </div>
+
+        <!-- Column 2: Nav Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigate</h4>
+          <a href="#hero" class="footer-link">Home</a>
+          <a href="#problem" class="footer-link">Problem</a>
+          <a href="#gloves" class="footer-link">Smart Gloves</a>
+          <a href="#kai" class="footer-link">KAI Locket</a>
+          <a href="#architecture" class="footer-link">Architecture</a>
+          <a href="#timeline" class="footer-link">Timeline</a>
+          <a href="#creator" class="footer-link">Creator</a>
+        </div>
+
+        <!-- Column 3: GitHub + School -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">
+            <i class="ti ti-brand-github"></i> GitHub Repository
+          </a>
+          <p class="footer-school"
+             data-en="Government School, Gohana, Sonipat, Haryana — 131301"
+             data-hi="सरकारी विद्यालय, गोहाना, सोनीपत, हरियाणा — 131301">Government School, Gohana, Sonipat, Haryana — 131301</p>
+        </div>
+      </div>
+
+      <div class="footer-center">
+        <p class="footer-hindi-tagline">अंधों के लिए आँखें। मूकों के लिए आवाज़।</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 DRISHTI by Atul Malik. Made with purpose in Gohana, India.</p>
+      </div>
+
+      <div class="footer-gradient-bar"></div>
+    </div>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- 21. SIDE NAVIGATOR                           -->
+  <!-- ============================================ -->
+  <nav id="side-nav">
+    <div class="side-nav-item" data-section="gloves">
+      <div class="side-nav-progress">
+        <div class="side-nav-fill" data-target="gloves"></div>
+      </div>
+      <span class="side-nav-label">Smart Gloves <span class="side-nav-number">&#x2460;</span></span>
+    </div>
+    <div class="side-nav-item" data-section="kai">
+      <div class="side-nav-progress">
+        <div class="side-nav-fill" data-target="kai"></div>
+      </div>
+      <span class="side-nav-label">KAI Locket <span class="side-nav-number">&#x2461;</span></span>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- SCRIPTS                                      -->
+  <!-- ============================================ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/magnetic.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/three-glove.js"></script>
+  <script src="js/three-locket.js"></script>
+  <script src="js/mindmap.js"></script>
+
+</body>
+</html>
